@@ -2,13 +2,20 @@
 <html>
 <head>
   <title>Lockscreen Preview</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <canvas id="canvas"></canvas>
+<h2>Your Emergency Lockscreen</h2>
 
-  <button onclick="download()">Download Lockscreen</button>
+<canvas id="canvas"></canvas>
 
-  <script src="js/canvas.js"></script>
+<button onclick="downloadImage()">Download Lockscreen</button>
+
+<script src="js/qr.js"></script>
+<script src="js/canvas.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+
+
 </body>
 </html>
