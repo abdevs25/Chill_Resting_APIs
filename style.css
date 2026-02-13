@@ -1,5 +1,5 @@
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: cursive;
   background: linear-gradient(135deg, #667eea, #764ba2);
   min-height: 100vh;
   margin: 0;
@@ -17,14 +17,34 @@ p {
 }
 
 .card {
-  background: #ffffff;
-  color: #333;
+  background: rgba(30, 30, 60, 0.55);  /* dark tinted glass */
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  color: #fff;
+
   max-width: 420px;
   margin: 20px auto;
   padding: 25px;
   border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+ /* text readable on glass */
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.45);
+}
+.card {
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.4),
+    inset 0 0 20px rgba(255,255,255,0.05);
+}
+
 
 input, textarea {
   width: 100%;
@@ -41,7 +61,7 @@ textarea {
 
 .upload {
   display: block;
-  background: #f1f1f1;
+  background: #b0a5a5;
   padding: 12px;
   border-radius: 10px;
   margin: 10px 0;
@@ -62,15 +82,20 @@ button {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  color: #fff;
-  background: linear-gradient(135deg, #e28198, #ff4b2b);
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
   transition: transform 0.2s, box-shadow 0.2s;
 }
+* {
+  box-sizing: border-box;
+}
+
 
 button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
 }
+
 
 canvas {
   width: 320px;
@@ -78,4 +103,16 @@ canvas {
   border-radius: 20px;
   margin: 15px 0;
   box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+.call-btn {
+  display: inline-block;
+  padding: 14px 25px;
+  margin: 10px 0 20px 0;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #ffffff;          /* make text white */
+  font-weight: bold;
+  background: linear-gradient(135deg,#ff8679,#eb0784);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  transition: 0.2s ease;
 }
