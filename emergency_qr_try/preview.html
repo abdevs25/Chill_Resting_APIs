@@ -2,20 +2,17 @@
 <html>
 <head>
   <title>Preview</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>Your Emergency Lockscreen</h2>
+<h2>Click anywhere to place the QR</h2>
 
 <canvas id="canvas"></canvas>
-<button onclick="downloadImage()">Download Lockscreen</button>
+<button id="downloadBtn">Download Lockscreen</button>
 
-<!-- QR Library -->
 <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
-
-<script src="js/qr.js"></script>
-<script src="js/canvas.js"></script>
+<script src="canvas.js"></script>
 
 </body>
 </html>

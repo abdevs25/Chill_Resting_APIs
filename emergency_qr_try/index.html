@@ -2,49 +2,24 @@
 <html>
 <head>
   <title>Emergency QR Generator</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <h2>Create Emergency QR Lockscreen</h2>
 
 <form id="emergencyForm">
-  <input type="text" placeholder="Full Name" required>
-  <input type="text" placeholder="Blood Group" required>
-  <input type="text" placeholder="Emergency Contact Name" required>
-  <input type="tel" placeholder="Emergency Contact Number" required>
-  <textarea placeholder="Allergies / Medical Notes"></textarea>
+  <input type="text" id="name" placeholder="Full Name" required>
+  <input type="text" id="blood" placeholder="Blood Group" required>
+  <input type="text" id="contactName" placeholder="Emergency Contact Name" required>
+  <input type="tel" id="contactNumber" placeholder="Emergency Contact Number" required>
+  <textarea id="allergies" placeholder="Allergies / Medical Notes"></textarea>
 
-  <input type="file" id="wallpaperUpload" accept="image/*" required>
-
-  <button type="submit">Generate Lockscreen</button>
-</form>
-
-<script src="js/form.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Emergency QR Generator</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<h2>Create Emergency QR Lockscreen</h2>
-
-<form id="emergencyForm">
-  <input type="text" placeholder="Full Name" required>
-  <input type="text" placeholder="Blood Group" required>
-  <input type="text" placeholder="Emergency Contact Name" required>
-  <input type="tel" placeholder="Emergency Contact Number" required>
-  <textarea placeholder="Allergies / Medical Notes"></textarea>
-
-  <input type="file" id="wallpaperUpload" accept="image/*" required>
+  <input type="file" id="wallpaper" accept="image/*" required>
 
   <button type="submit">Generate Lockscreen</button>
 </form>
 
-<script src="js/form.js"></script>
+<script src="form.js"></script>
 </body>
 </html>
