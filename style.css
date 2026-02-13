@@ -1,11 +1,11 @@
 body {
   font-family: cursive;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #d0ea66, #e10263);
   min-height: 100vh;
   margin: 0;
   padding: 20px;
   text-align: center;
-  color: #fff;
+  color: #000000;
 }
 
 h1 {
@@ -83,7 +83,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   color: #ffffff;
-  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  background: linear-gradient(135deg, #546fe5, #f12bff);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 * {
