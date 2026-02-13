@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+input, textarea, button {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+canvas {
+  border: 1px solid #ccc;
+  width: 300px;
+  height: auto;
+  margin: 20px 0;
+}
+
+button {
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.call-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emergency Info</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="info"></div>
+
+<script>
+  const data = JSON.parse(localStorage.getItem("emergencyData"));
+
+  document.getElementById("info").innerHTML = `
+    <h1>🚨 Emergency Information</h1>
+    <p><b>Name:</b> ${data.name}</p>
+    <p><b>Blood Group:</b> ${data.blood}</p>
+    <p><b>Allergies:</b> ${data.allergies || "None"}</p>
+    <a href="tel:${data.contactNumber}" class="call-btn">
+      Call ${data.contactName}
+    </a>
+  `;
+</script>
+
+</body>
+</html>
