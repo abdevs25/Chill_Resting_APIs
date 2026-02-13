@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emergency QR Lockscreen</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<h1>🔐 Emergency QR Lockscreen</h1>
+<p>Create a life-saving lockscreen</p>
+
+<form id="emergencyForm" class="card">
+  <input id="name" placeholder="Full Name" required>
+  <input id="blood" placeholder="Blood Group" required>
+  <input id="contactName" placeholder="Emergency Contact Name" required>
+  <input id="contactNumber" placeholder="Emergency Contact Number" required>
+  <textarea id="allergies" placeholder="Allergies / Medical Notes"></textarea>
+
+  <label class="upload">
+    Upload Wallpaper
+    <input type="file" id="wallpaper" accept="image/*" required>
+  </label>
+
+  <!-- ✅ STATUS MESSAGE -->
+  <p id="uploadStatus" style="color: green; display: none;">
+    ✅ Photo uploaded
+  </p>
+
+  <button type="submit">Generate Lockscreen</button>
+</form>
+
+<!-- ✅ THIS SCRIPT GOES HERE -->
+<script>
+  const wallpaperInput = document.getElementById("wallpaper");
+  const status = document.getElementById("uploadStatus");
+
+  wallpaperInput.addEventListener("change", () => {
+    if (wallpaperInput.files.length > 0) {
+      status.style.display = "block";
+    }
+  });
+</script>
+
+<!-- ✅ form.js MUST BE LOADED AFTER -->
+<script src="form.js"></script>
+
+</body>
+</html>

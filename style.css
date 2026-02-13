@@ -1,0 +1,118 @@
+body {
+  font-family: cursive;
+  background: linear-gradient(135deg, #d0ea66, #e10263);
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+p {
+  opacity: 0.9;
+}
+
+.card {
+  background: rgba(30, 30, 60, 0.55);  /* dark tinted glass */
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  color: #fff;
+
+  max-width: 420px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 20px;
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ /* text readable on glass */
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.45);
+}
+.card {
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.4),
+    inset 0 0 20px rgba(255,255,255,0.05);
+}
+
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+textarea {
+  resize: none;
+}
+
+.upload {
+  display: block;
+  background: #b0a5a5;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.upload input {
+  display: none;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ffffff;
+  background: linear-gradient(135deg, #546fe5, #f12bff);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+
+canvas {
+  width: 320px;
+  height: auto;
+  border-radius: 20px;
+  margin: 15px 0;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+.call-btn {
+  display: inline-block;
+  padding: 14px 25px;
+  margin: 10px 0 20px 0;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #ffffff;          /* make text white */
+  font-weight: bold;
+  background: linear-gradient(135deg,#ff8679,#eb0784);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  transition: 0.2s ease;
+}
