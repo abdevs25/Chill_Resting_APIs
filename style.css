@@ -63,7 +63,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   color: #fff;
-  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  background: linear-gradient(135deg, #e28198, #ff4b2b);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
