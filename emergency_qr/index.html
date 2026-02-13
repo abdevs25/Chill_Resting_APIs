@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Emergency QR Generator</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Emergency QR Lockscreen</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>Create Emergency QR Lockscreen</h2>
+<h1>🔐 Emergency QR Lockscreen</h1>
+<p>Create a life-saving lockscreen in seconds</p>
 
-<form id="emergencyForm">
-  <input type="text" placeholder="Full Name" required>
-  <input type="text" placeholder="Blood Group" required>
-  <input type="text" placeholder="Emergency Contact Name" required>
-  <input type="tel" placeholder="Emergency Contact Number" required>
-  <textarea placeholder="Allergies / Medical Notes"></textarea>
+<form id="emergencyForm" class="card">
+  <input type="text" id="name" placeholder="Full Name" required>
+  <input type="text" id="blood" placeholder="Blood Group" required>
+  <input type="text" id="contactName" placeholder="Emergency Contact Name" required>
+  <input type="tel" id="contactNumber" placeholder="Emergency Contact Number" required>
+  <textarea id="allergies" placeholder="Allergies / Medical Notes"></textarea>
 
-  <label>Upload Lockscreen Wallpaper</label>
-  <input type="file" id="wallpaperUpload" accept="image/*" required>
+  <label class="upload">
+    Upload Lockscreen Wallpaper
+    <input type="file" id="wallpaper" accept="image/*" required>
+  </label>
 
   <button type="submit">Generate Lockscreen</button>
 </form>
 
-<script src="js/form.js"></script>
+<script src="form.js"></script>
 </body>
 </html>
