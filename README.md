@@ -14,7 +14,7 @@
 - Member 2: [K ARCHISHA NAIR] - [SCMS SCHOOL OF ENGNEERING AND TECHNOLOGY]
 
 ### Hosted Project Link
-aesmer.vercel.app
+https://aesmer.vercel.app/
 
 ### Project Description
 A web-based emergency support platform that allows users to:
