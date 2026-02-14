@@ -14,7 +14,7 @@
 - Member 2: [K ARCHISHA NAIR] - [SCMS SCHOOL OF ENGNEERING AND TECHNOLOGY]
 
 ### Hosted Project Link
-https://aesmer-opr5q6or3-a-b-devikas-projects.vercel.app/
+aesmer.vercel.app
 
 ### Project Description
 A web-based emergency support platform that allows users to:
@@ -49,7 +49,7 @@ We generated an emergency QR code and embeded it into a custom lockscreen wallpa
 
 List the key features of your project:
 - Feature 1: custom wallpaper with QR code for emergency contact
-- Feature 2: psitive affirmation block
+- Feature 2: positive affirmation block
 - Feature 3: important helpline numbers
 - Feature 4: send location through whatsapp
 - Feature 5: basic first aid guide
